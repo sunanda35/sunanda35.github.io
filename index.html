@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" href="/assets/icons/favicon.ico"/>
+    <script src="https://kit.fontawesome.com/e2c07a3f2c.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P@100&family=Share+Tech&family=Share+Tech&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
@@ -14,6 +15,9 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/body.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/skillsets.css">
+    <link rel="stylesheet" href="/css/i_love.css">
+    <link rel="stylesheet" href="/css/about.css">
 
 
 
@@ -37,13 +41,13 @@
         </div>
     </nav>
     <div id="home" class="body">
-        <img id="background_img" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzI1IiBoZWlnaHQ9Ijk5MCIgdmlld0JveD0iMCAwIDcyNSA5OTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjY2My45NzMiIHk9Ii00NTQiIHdpZHRoPSIxMjcwLjAzIiBoZWlnaHQ9IjkzOSIgcng9IjE1IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSA2NjMuOTczIC00NTQpIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXIpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSI2NjMuOTczIiB5MT0iLTQ1NCIgeDI9IjE1NTkuNjMiIHkyPSI3NTcuNDEyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM2QTk4RjAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNDk2MURDIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==" alt="">
+        <img id="background_img" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzI1IiBoZWlnaHQ9Ijk5MCIgdmlld0JveD0iMCAwIDcyNSA5OTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjY2My45NzMiIHk9Ii00NTQiIHdpZHRoPSIxMjcwLjAzIiBoZWlnaHQ9IjkzOSIgcng9IjE1IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSA2NjMuOTczIC00NTQpIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXIpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSI2NjMuOTczIiB5MT0iLTQ1NCIgeDI9IjE1NTkuNjMiIHkyPSI3NTcuNDEyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM2QTk4RjAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNDk2MURDIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==">
         <div class="intro">
             <div class="name">
                 <p>Hello, I am</p>
                 <h1 id="name">SUNANDA SAMANTA</h1>
                 <p id="describe_me">Web and App Developer </p>
-                <a href="https://docs.google.com/document/d/1_--OmL_3YOuA1Ur2Om5CuphixHBDrRZUbrMG3kqQOP0" id="resume" title="Sunanda_resume.pdf" download>Resume Download</a>
+                <a href="https://docs.google.com/document/d/1_--OmL_3YOuA1Ur2Om5CuphixHBDrRZUbrMG3kqQOP0" target="_blank" id="resume" title="Sunanda_resume.pdf" download>Resume Download</a>
                 <div class="links">
                     <ul>
                         <li><a href="https://github.com/sunanda35" target="_blank"><img src="assets/icons/github.svg" alt="github"></a></li>
@@ -62,6 +66,43 @@
                 <pre>7  }</pre>
             </div>
         </div>
+        <div class="skillset">
+            <h2>My Skillsets</h2>
+            <div class="skill_chart">
+                <div id="chart_div"></div>
+            </div>
+            <div id="skill_show" class="skill_show">
+                <ul>
+                    <li><i class="fab fa-node"></i></li>
+                    <li><i class="fab fa-js-square"></i></li>
+                    <li><i class="fab fa-react"></i></li>
+                    <li><i class="fab fa-python"></i></li>
+                    <li><i class="fab fa-java"></i></li>
+                    <li><i class="fab fa-docker"></i></li>
+                    <li><i class="fab fa-sass"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-git"></i></li>
+                    <li><i class="fab fa-html5"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="about">
+            <h1>About Me</h1>
+            <div class="about_me">
+                <div class="img_me">
+                    <img src="/assets/images/sunanda.jpeg" alt="">
+                </div>
+                <div class="describe_me">
+                    <p>Hi, I'm Sunanda Samanta, a passionate Backend web developer from India, currently Studying at UEM, jaipur. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly. I am especially focusing on Reactjs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="i_love">
+
+        </div>
     </div>
 </body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="/js/chart.js"></script>
+<script src="/js/scroll.js"></script>
 </html>

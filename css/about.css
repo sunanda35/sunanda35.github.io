@@ -1,0 +1,33 @@
+.about{
+    margin-top: 6rem;
+}
+.about_me{
+    background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+    display: flex;
+    justify-content: space-evenly;
+    height: 600px;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+.img_me{
+    width: 20rem;
+    height: 20rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: hidden;
+    border: 10px solid white;
+    border-radius: 50%;
+}
+.img_me > img{
+    width: 20rem;
+    height: 20rem;
+}
+.describe_me{
+    width: 45%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.describe_me > p{
+    color: white;
+}
