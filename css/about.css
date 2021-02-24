@@ -1,14 +1,21 @@
 .about{
-    margin-top: 6rem;
+    margin-top: 12rem;
+}
+.about > h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #6A98F0;
 }
 .about_me{
     background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
     display: flex;
     justify-content: space-evenly;
-    height: 600px;
+    height: auto;
+    padding-top: 35px;
+    padding-bottom: 35px;
     padding-left: 8%;
     padding-right: 8%;
-
 }
 .img_me{
     width: 20rem;
@@ -30,4 +37,66 @@
 }
 .describe_me > p{
     color: white;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: 'Share Tech', sans-serif;
+}
+.quote{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10rem;
+}
+.quote_storage{
+    position: relative;
+    height: 80px;
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(133, 133, 133) 0px 5px 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.quote_storage > h5{
+    font-size: 1rem;
+    font-family: 'Roboto, Oxygen, Ubuntu, Cantarell';
+}
+.quote_storage > p{
+    position: absolute;
+    font-size: small;
+    font-style: italic;
+    margin-top: auto;
+    bottom: 10px;
+    right: 10px;
+}
+.project{
+    margin-top: 13rem;
+}
+.project > h1{
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #6A98F0;
+}
+.project_body{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.projects{
+    margin-top: 20px;
+    width: 70%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: rgb(133, 133, 133) 0px 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.projects > h1{
+    font-family: 'Share Tech', sans-serif;
+}
+.projects > p{
+    margin-top: 1rem;
+    font-size: large;
 }
