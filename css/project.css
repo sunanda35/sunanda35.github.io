@@ -1,0 +1,65 @@
+.project{
+    margin-top: 13rem;
+}
+.project > h1{
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #6A98F0;
+}
+.project_body{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.projects{
+    margin-top: 20px;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: rgb(236, 236, 236) 0px 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.projects > h1{
+    font-family: 'Share Tech', sans-serif;
+    color: #383838;
+}
+.projects > p{
+    margin-top: 1rem;
+    font-size: large;
+    color: #383838;
+}
+.technology{
+    color: #6A98F0;
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: large;
+}
+.technologies{
+    color: #383838;
+    cursor: pointer;
+}
+.project_show{
+    color: #383838;
+    margin-top: 10px;
+    list-style: none;
+    border-left: 3.5px solid #6A98F0;
+    border-radius: 5px;
+    padding-left: 6px;
+}
+.project_show > li{
+    font-size: 16px;
+    margin-top: 2px;
+}
+.project_show > li >a{
+    color: #6A98F0;
+    transition: all .3s;
+}
+.project_show > li >a:hover{
+    font-weight: bolder;
+    color: black;
+}

@@ -1,0 +1,34 @@
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    background-color: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer_left{
+    height: 100%;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* background-color: white; */
+}
+/* .footer_right{
+    width: 10px;
+} */
+/* .footer_right > ul{
+    list-style: none;
+}
+.footer_right > ul > li{
+    display: inline-block;
+} */
+.footer_right >ul >li >a{
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+    
+}
+.footer_right >ul >li >a:hover{
+    color: #71a3ff;
+}

@@ -1,0 +1,38 @@
+.contact{
+    margin-top: 13rem;
+    margin-bottom: 10rem;
+}
+.contact > h1{
+    margin-bottom: 60px;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #6A98F0;
+}
+.contact_info{
+    height: 500px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
+.contact_logo{
+    width: 40%;
+    height: 100%;
+    background-color: rgb(115, 170, 219);
+    overflow: hidden;
+    /* background-color: #6A98F0; */
+}
+.contact_logo > a > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 150%;
+}
+.contact_page{
+    width: 60%;
+    height: 100%;
+}
