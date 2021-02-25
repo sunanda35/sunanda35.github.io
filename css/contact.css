@@ -6,7 +6,7 @@
     margin-bottom: 60px;
     font-size: 2.5rem;
     text-align: center;
-    color: #6A98F0;
+    color: #6D83F2;
 }
 .contact_info{
     height: 500px;
@@ -17,6 +17,7 @@
     border-radius: 10px;
     display: flex;
     overflow: hidden;
+    box-shadow: rgb(207, 207, 207) 0px 5px 10px;
 }
 .contact_logo{
     width: 40%;
@@ -30,9 +31,11 @@
     margin-left: auto;
     margin-right: auto;
     height: 500px;
-    width: 150%;
+    width: 800px;
+    /* clip: rect(); */
 }
 .contact_page{
     width: 60%;
     height: 100%;
+    overflow: hidden;
 }

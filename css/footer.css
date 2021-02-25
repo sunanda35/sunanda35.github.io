@@ -1,8 +1,8 @@
 footer{
-    height: 60px;
+    height: 40px;
     width: 100%;
-    background-color: black;
-    background-color: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+    /* background-color: black; */
+    background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
 }
 .footer{
     display: flex;
@@ -26,9 +26,9 @@ footer{
 } */
 .footer_right >ul >li >a{
     text-decoration: none;
-    color: rgb(148, 148, 148);
+    color: whitesmoke;
     
 }
 .footer_right >ul >li >a:hover{
-    color: #71a3ff;
+    color: #ffffff;
 }
