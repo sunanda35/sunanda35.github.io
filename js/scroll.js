@@ -8,5 +8,5 @@ window.addEventListener('load', () => {
     }else{
         flavoursContainer.scrollLeft=0
     }
-  }, 10);
+  }, 80);
 });

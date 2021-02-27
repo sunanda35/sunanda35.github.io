@@ -1,12 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
 }
 .body{
     margin-top: 60px;
     width: 100%;
-       
 }
 #background_img{
     position: absolute;
@@ -15,6 +13,8 @@
     right: 0;
     z-index: -10000;
 }
+
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -35,3 +35,13 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #6A98F0; 
 }
+
+@media only screen and (max-width: 730px){
+  .body{
+    margin-top: 0px;
+  }
+  #background_img{
+    width: 46%;
+  }
+}
+

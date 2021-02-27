@@ -1,6 +1,6 @@
 .contact{
     margin-top: 13rem;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 .contact > h1{
     margin-bottom: 60px;
@@ -38,4 +38,21 @@
     width: 60%;
     height: 100%;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 730px){
+    .contact{
+        margin-top: 8rem;
+    }
+    .contact_info{
+        width: 90%;
+        height: 830px;
+        overflow: hidden;
+    }
+    .contact_logo{
+        display: none;
+    }
+    .contact_page{
+        width: 100%;
+    }
 }

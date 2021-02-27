@@ -39,3 +39,18 @@
     margin-left: 200px;
     color: #6D83F2;
 }
+@media only screen and (max-width: 730px){
+    .skillset{
+        margin-top: 8rem;
+    }
+    .skill_chart{
+        width: 95%;
+    }
+    .skill_show{
+        margin-top: 30px;
+    }
+    .skill_show >ul >li{
+        font-size: 5em;
+        margin-left: 60px;
+    }
+}

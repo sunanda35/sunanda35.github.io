@@ -10,16 +10,18 @@
 }
 .name{
     margin-top: 2rem;
-    background-color: rgb(255, 255, 255) ;
+    background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     color: #383838;
 }
 .name > p{
     font-size: 1rem;
+    text-align: center;
 }
 #name{
     font-size: 2.6rem;
     font-weight: 900px;
+    text-align: center;
 }
 #describe_me{
     font-size: 1.6rem;
@@ -60,15 +62,38 @@
 }
 
 .name_style{
-    padding: 25px 20px;;
+    padding: 25px 20px;
     border-radius: 10px;
     background-color: white;
     box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
-    box-sizing: border-box;
 }
 .name_style > pre{
     padding: 6px;
     color: #6A98F0;
     font-family: 'Source Code Pro', monospace;
     font-size: small;
+}
+
+@media only screen and (max-width: 730px){
+    .intro{
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        width: 95%;
+        
+    }
+    .name{
+        background-color: transparent;
+        margin-bottom: 3rem;
+    }
+    .name_style{
+        width: 93%;
+        padding: 5px 10px;
+        /* overflow: scroll; */
+    }
+    #resume{
+        margin-left: 30%;
+    }
+    .links{
+        margin-left: 28%;
+    }
 }
