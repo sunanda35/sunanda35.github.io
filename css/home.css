@@ -16,12 +16,10 @@
 }
 .name > p{
     font-size: 1rem;
-    text-align: center;
 }
 #name{
     font-size: 2.6rem;
     font-weight: 900px;
-    text-align: center;
 }
 #describe_me{
     font-size: 1.6rem;
@@ -84,6 +82,12 @@
     .name{
         background-color: transparent;
         margin-bottom: 3rem;
+    }
+    .name > p{
+        text-align: center;
+    }
+    #name{
+        text-align: center;
     }
     .name_style{
         width: 93%;
