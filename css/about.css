@@ -29,6 +29,13 @@
 .img_me > img{
     width: 20rem;
     height: 20rem;
+    filter: grayscale(100%);
+    transition: all .5s;
+}
+.img_me > img:hover{
+    filter: grayscale(0);
+    width: 20.5rem;
+    height: 20.5rem;
 }
 .describe_me{
     width: 45%;
@@ -86,6 +93,11 @@
     .img_me > img{
         width: 15rem;
         height: 15rem;
+    }
+    .img_me > img:hover{
+        width: 15rem;
+        height: 15rem;
+        filter: grayscale(0);
     }
     .describe_me{
         width: 95%;
