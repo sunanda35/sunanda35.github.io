@@ -22,6 +22,8 @@ function drawBasic() {
         ['CSS', 50],
         ['SCSS', 50],
         ['Bootstrap', 50],
+        ['Docker', 40],
+        ['CI/CD', 30],
         ['Git', 80]
       ]);
 
