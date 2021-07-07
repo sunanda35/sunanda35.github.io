@@ -9,7 +9,7 @@
   color: #6d83f2;
 }
 .contact_info {
-  height: 500px;
+  height: 600px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -20,22 +20,14 @@
   box-shadow: rgb(207, 207, 207) 0px 5px 10px;
 }
 .contact_logo {
-  width: 40%;
+  width: 55%;
   height: 100%;
   background-color: rgb(115, 170, 219);
   overflow: hidden;
   /* background-color: #6A98F0; */
 }
-.contact_logo > a > img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 500px;
-  width: 800px;
-  /* clip: rect(); */
-}
 .contact_page {
-  width: 60%;
+  width: 45%;
   height: 100%;
   overflow: hidden;
 }
