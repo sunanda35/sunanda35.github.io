@@ -1,56 +1,55 @@
-.skillset{
-    margin-top: 15rem;
-    margin-left: auto;
-    margin-right: auto;
+.skillset {
+  margin-top: 15rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-.skillset > h2{
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: bold;
-    color: #6D83F2;
+.skillset > h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #6d83f2;
 }
-.skill_chart{
-    margin-top: 2rem;
-    margin-bottom: 2px;
-    width: 60%;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: rgb(207, 207, 207) 0px 5px 10px;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
+.skill_chart {
+  margin-top: 2rem;
+  margin-bottom: 2px;
+  width: 60%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgb(207, 207, 207) 0px 5px 10px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
-.skill_show{
-    margin-top: 50px;
-    overflow-x: scroll;
-    overflow: hidden;
-    white-space: nowrap;
-    
+.skill_show {
+  margin-top: 50px;
+  overflow-x: scroll;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.skill_show >ul{
-    list-style: none;
+.skill_show > ul {
+  list-style: none;
 }
-.skill_show >ul >li{
-    display: inline-flex;
-    font-size: 8em;
-    margin-left: 200px;
-    color: #6D83F2;
+.skill_show > ul > li {
+  display: inline-flex;
+  font-size: 8em;
+  margin-left: 200px;
+  color: #6d83f2;
 }
-@media only screen and (max-width: 730px){
-    .skillset{
-        margin-top: 8rem;
-    }
-    .skill_chart{
-        width: 95%;
-    }
-    .skill_show{
-        margin-top: 30px;
-    }
-    .skill_show >ul >li{
-        font-size: 5em;
-        margin-left: 60px;
-    }
+@media only screen and (max-width: 730px) {
+  .skillset {
+    margin-top: 8rem;
+  }
+  .skill_chart {
+    width: 95%;
+  }
+  .skill_show {
+    margin-top: 30px;
+  }
+  .skill_show > ul > li {
+    font-size: 5em;
+    margin-left: 60px;
+  }
 }

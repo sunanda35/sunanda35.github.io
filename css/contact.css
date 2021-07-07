@@ -1,58 +1,58 @@
-.contact{
-    margin-top: 13rem;
-    margin-bottom: 3rem;
+.contact {
+  margin-top: 13rem;
+  margin-bottom: 3rem;
 }
-.contact > h1{
-    margin-bottom: 60px;
-    font-size: 2.5rem;
-    text-align: center;
-    color: #6D83F2;
+.contact > h1 {
+  margin-bottom: 60px;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #6d83f2;
 }
-.contact_info{
-    height: 500px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
-    overflow: hidden;
-    box-shadow: rgb(207, 207, 207) 0px 5px 10px;
+.contact_info {
+  height: 500px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: rgb(207, 207, 207) 0px 5px 10px;
 }
-.contact_logo{
-    width: 40%;
-    height: 100%;
-    background-color: rgb(115, 170, 219);
-    overflow: hidden;
-    /* background-color: #6A98F0; */
+.contact_logo {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(115, 170, 219);
+  overflow: hidden;
+  /* background-color: #6A98F0; */
 }
-.contact_logo > a > img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 500px;
-    width: 800px;
-    /* clip: rect(); */
+.contact_logo > a > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 800px;
+  /* clip: rect(); */
 }
-.contact_page{
-    width: 60%;
-    height: 100%;
-    overflow: hidden;
+.contact_page {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
 }
 
-@media only screen and (max-width: 730px){
-    .contact{
-        margin-top: 8rem;
-    }
-    .contact_info{
-        width: 90%;
-        height: 830px;
-        overflow: hidden;
-    }
-    .contact_logo{
-        display: none;
-    }
-    .contact_page{
-        width: 100%;
-    }
+@media only screen and (max-width: 730px) {
+  .contact {
+    margin-top: 8rem;
+  }
+  .contact_info {
+    width: 90%;
+    height: 830px;
+    overflow: hidden;
+  }
+  .contact_logo {
+    display: none;
+  }
+  .contact_page {
+    width: 100%;
+  }
 }
