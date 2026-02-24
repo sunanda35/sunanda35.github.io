@@ -296,17 +296,34 @@ section {
     gap: 1rem;
 }
 
-/* About Section */
-.about-grid {
+/* Expertise Section */
+.expertise-grid {
     display: grid;
-    grid-template-columns: 3fr 2fr;
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
 }
 
-.about-text p {
+.expertise-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.expertise-card i {
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
+}
+
+.expertise-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.expertise-card p {
     color: var(--text-muted);
-    font-size: 1.05rem;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    margin-bottom: 1rem;
 }
 
 .skills-container {
@@ -603,6 +620,6 @@ footer {
     .hero h1 { font-size: 3rem; }
     .hero h2 { font-size: 2rem; }
     
-    .about-grid { grid-template-columns: 1fr; }
+    .expertise-grid { grid-template-columns: 1fr; }
     .section-heading .line { max-width: 100px; }
 }
