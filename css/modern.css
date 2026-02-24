@@ -131,7 +131,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     border: 1px solid var(--border-color);
     color: var(--text-main);
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+    padding: 0.75rem 1rem;
 }
 
 .btn-outline:hover {
@@ -597,6 +598,12 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .hero h1 { font-size: 3.8rem; }
+    .hero h2 { font-size: 2.5rem; }
+    section { padding: 80px 0; }
+}
+
 @media (max-width: 868px) {
     .nav-links {
         display: none;
@@ -617,9 +624,46 @@ footer {
         display: block;
     }
 
-    .hero h1 { font-size: 3rem; }
-    .hero h2 { font-size: 2rem; }
+    .hero h1 { font-size: 3.2rem; }
+    .hero h2 { font-size: 2.2rem; }
     
     .expertise-grid { grid-template-columns: 1fr; }
-    .section-heading .line { max-width: 100px; }
+    .project-grid { grid-template-columns: 1fr; }
+    .section-heading .line { max-width: 150px; }
+    
+    .contact-title { font-size: 3rem; }
+}
+
+@media (max-width: 600px) {
+    main { padding: 0 1.5rem; }
+    .nav-content { padding: 0 1.5rem; }
+    
+    section { padding: 60px 0; }
+    
+    .hero h1 { font-size: 2.6rem; }
+    .hero h2 { font-size: 1.8rem; }
+    .hero-desc { font-size: 1rem; }
+    
+    /* Stack CTA buttons on mobile */
+    .hero-cta { flex-direction: column; width: 100%; }
+    .btn-outline { margin-left: 0; }
+    
+    /* Modify section headers for narrow screens */
+    .section-heading { flex-direction: column; align-items: flex-start; margin-bottom: 2rem; }
+    .section-heading .line { display: none; } /* Hide the line constraint on very small devices */
+    
+    /* Timeline adjustments */
+    .timeline::before { left: 9px; }
+    .timeline-item { padding-left: 35px; }
+    .timeline-dot { left: 3px; width: 11px; height: 11px; }
+
+    .card { padding: 1.5rem; }
+    .contact-title { font-size: 2.2rem; }
+}
+
+@media (max-width: 400px) {
+    .hero h1 { font-size: 2.2rem; }
+    .hero h2 { font-size: 1.5rem; }
+    .section-heading h2 { font-size: 1.5rem; }
+    .contact-title { font-size: 1.8rem; }
 }

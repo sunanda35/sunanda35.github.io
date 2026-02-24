@@ -105,4 +105,22 @@ document.addEventListener('DOMContentLoaded', () => {
         // Start typing after a short delay
         setTimeout(typeWriter, 1000);
     }
+
+    // 6. UTM Tracking for Outbound Links
+    const utmSource = 'sunanda35.github.io';
+    const utmMedium = 'sunanda35.github.io';
+    
+    document.querySelectorAll('.track-outbound').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const url = new URL(link.href);
+            // Append UTM params if they don't exist
+            if (!url.searchParams.has('utm_source')) {
+                url.searchParams.set('utm_source', utmSource);
+            }
+            if (!url.searchParams.has('utm_medium')) {
+                url.searchParams.set('utm_medium', utmMedium);
+            }
+            link.href = url.toString();
+        });
+    });
 });
