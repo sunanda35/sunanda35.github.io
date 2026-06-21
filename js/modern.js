@@ -34,30 +34,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     
+    const setMenu = (open) => {
+        navLinks.classList.toggle('active', open);
+        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        const icon = hamburger.querySelector('i');
+        icon.classList.toggle('fa-bars', !open);
+        icon.classList.toggle('fa-times', open);
+    };
+
     if (hamburger) {
         hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            const icon = hamburger.querySelector('i');
-            if (navLinks.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-times');
-            } else {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
+            setMenu(!navLinks.classList.contains('active'));
         });
     }
 
     // Close mobile menu on link click
     document.querySelectorAll('.nav-links li a').forEach(link => {
-        link.addEventListener('click', () => {
-            if (navLinks.classList.contains('active')) {
-                navLinks.classList.remove('active');
-                const icon = hamburger.querySelector('i');
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        });
+        link.addEventListener('click', () => setMenu(false));
     });
 
     // 4. Scroll Reveal (Intersection Observer)
