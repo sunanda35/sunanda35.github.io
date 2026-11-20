@@ -1,32 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Header background on scroll
-    const hdr = document.getElementById('hdr');
-    const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 24);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
+// Header rule on scroll
+const hdr = document.getElementById('hdr');
+const onScroll = () => hdr.classList.toggle('scrolled', window.scrollY > 8);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
 
-    // Scroll reveal
-    const io = new IntersectionObserver((entries, obs) => {
-        entries.forEach(e => {
-            if (!e.isIntersecting) return;
-            e.target.classList.add('in');
-            obs.unobserve(e.target);
-        });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+// Copy email
+document.querySelectorAll('[data-copy]').forEach(btn => {
+    const label = btn.textContent;
+    btn.addEventListener('click', async () => {
+        try {
+            await navigator.clipboard.writeText(btn.dataset.copy);
+            btn.textContent = 'Copied';
+        } catch (_) {
+            btn.textContent = 'Copy failed, select the address';
+        }
+        btn.classList.add('done');
+        setTimeout(() => { btn.textContent = label; btn.classList.remove('done'); }, 2000);
+    });
+});
 
-    // UTM tagging on outbound links
-    const src = 'sunanda35.github.io';
-    document.querySelectorAll('.track-outbound').forEach(link => {
-        link.addEventListener('click', () => {
-            try {
-                const url = new URL(link.href);
-                if (url.protocol.startsWith('http')) {
-                    if (!url.searchParams.has('utm_source')) url.searchParams.set('utm_source', src);
-                    if (!url.searchParams.has('utm_medium')) url.searchParams.set('utm_medium', 'portfolio');
-                    link.href = url.toString();
-                }
-            } catch (_) { /* mailto etc. */ }
-        });
+// UTM tagging on outbound http(s) links
+document.querySelectorAll('.track-outbound').forEach(link => {
+    link.addEventListener('click', () => {
+        try {
+            const url = new URL(link.href, location.href);
+            if (!url.protocol.startsWith('http') || url.host === location.host) return;
+            if (!url.searchParams.has('utm_source')) url.searchParams.set('utm_source', 'sunanda35.github.io');
+            if (!url.searchParams.has('utm_medium')) url.searchParams.set('utm_medium', 'portfolio');
+            link.href = url.toString();
+        } catch (_) { /* ignore */ }
     });
 });

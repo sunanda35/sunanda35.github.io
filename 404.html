@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/icon" href="/assets/icons/favicon.ico" />
-    <link rel="stylesheet" href="/css/404.css" />
-    <script
-      src="https://kit.fontawesome.com/e2c07a3f2c.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Sunanda - Web and App Developer</title>
-  </head>
-  <body>
-    <div class="body">
-      <div class="error">
-        <img src="/assets/images/404.gif" alt="404 page error" />
-      </div>
-      <a href="/">
-        <i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back Home Page</a
-      >
-    </div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <meta name="color-scheme" content="light dark">
+    <title>Page not found, Sunanda Samanta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/modern.css">
+    <style>
+        .nf { min-height: 100vh; display: grid; align-content: center; gap: 1.25rem; }
+        .nf h1 { font-size: clamp(5rem, 22vw, 14rem); font-weight: 800; letter-spacing: -0.06em; line-height: 0.85; }
+        .nf p { font-size: var(--t-md); color: var(--slate); max-width: 34em; }
+        .nf .track { height: 2rem; max-width: 36rem; background-size: 25% 100%; }
+        .nf .bar { --s: 0; --e: 30; --i: 0; background: transparent; box-shadow: inset 0 0 0 1.5px #c2412d;
+            background-image: repeating-linear-gradient(-45deg, rgba(194,65,45,.18) 0 5px, transparent 5px 10px); }
+        .nf .dur { --e: 30; --i: 0; color: #c2412d; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <main class="shell nf">
+        <h1 class="tnum">404</h1>
+        <span class="track" aria-hidden="true"><span class="bar"></span><span class="dur">span not found</span></span>
+        <p>This page doesn't exist. It may have moved when the site was rebuilt.</p>
+        <div class="cta"><a class="btn primary" href="/">Go to the homepage</a></div>
+    </main>
+</body>
 </html>
