@@ -268,18 +268,17 @@ header.site.scrolled { border-bottom-color: var(--rule); }
     background: repeating-linear-gradient(-45deg, var(--span-soft) 0 5px, transparent 5px 10px), var(--span-soft);
     box-shadow: inset 0 0 0 1.5px var(--span);
 }
-/* the open-ended "next role" span */
-.span.next .bar {
-    background: transparent;
-    box-shadow: inset 0 0 0 1.5px var(--live);
-    background-image: linear-gradient(90deg, color-mix(in srgb, var(--live) 30%, transparent), transparent);
+/* the current role: live, open-ended */
+.span.now .bar {
+    background: var(--live);
     border-radius: 3px 0 0 3px;
+    background-image: linear-gradient(90deg, var(--live) 55%, color-mix(in srgb, var(--live) 25%, transparent));
 }
-.span.next .dur {
+.span.now .dur {
     left: auto; right: calc(100% - var(--s) / 108 * 100% + 0.6rem);
-    color: var(--live); font-weight: 600;
+    color: var(--live); font-weight: 650;
 }
-.span.next b { color: var(--live); }
+.span.now b { color: var(--live); }
 .span.lab-left .dur { left: auto; right: calc(100% - var(--s) / 108 * 100% + 0.6rem); }
 
 @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
@@ -380,6 +379,7 @@ header.site.scrolled { border-bottom-color: var(--rule); }
 .skills div:last-child { border-bottom: 0; }
 .skills dt { font-weight: 650; }
 .skills dd { color: var(--slate); }
+.skills dd.strong { color: var(--ink); font-weight: 600; }
 
 /* contact */
 .contact {
@@ -460,9 +460,9 @@ header.site.scrolled { border-bottom-color: var(--rule); }
 
 /* long duration labels would overflow the right edge on narrow tracks */
 @media (max-width: 520px) {
-    .span:not(.next) .dur, .span.lab-left .dur { left: auto; right: 0; top: -0.2rem; transform: translateY(-100%); }
-    .span:not(.next) .track { margin-top: 1rem; }
-    .span.next .dur { right: auto; left: 0; }
+    .span:not(.now) .dur, .span.lab-left .dur { left: auto; right: 0; top: -0.2rem; transform: translateY(-100%); }
+    .span:not(.now) .track { margin-top: 1rem; }
+    .span.now .dur { right: auto; left: 0; }
     .span-name { padding-right: 0; }
 }
 
